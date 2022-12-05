@@ -6,9 +6,31 @@
     "start": "next start"
   },
   "dependencies": {
+    "@aldabil/react-scheduler": "^2.5.7",
+    "@atlaskit/tooltip": "^17.6.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@headlessui/react": "^1.7.2",
+    "@heroicons/react": "^2.0.13",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "@mui/x-date-pickers": "^5.0.8",
+    "@sanity/client": "^3.4.1",
+    "@sanity/image-url": "^1.0.1",
+    "@table-library/react-table-library": "^4.0.23",
+    "date-fns": "^2.29.3",
+    "framer-motion": "^7.6.7",
     "next": "latest",
+    "next-auth": "^4.17.0",
+    "next-sanity": "^2.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-audio-player": "^0.17.0",
+    "react-burger-menu": "^3.0.8",
+    "react-date-picker": "^9.1.0",
+    "react-dom": "18.2.0",
+    "react-portable-text": "^0.5.1",
+    "react-select": "^5.7.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

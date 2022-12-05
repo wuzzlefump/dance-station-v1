@@ -25,3 +25,28 @@ pnpm create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+todo:
+
+admin:
+student search
+edit station for student :{
+profile,
+lessons,
+dances,
+moves,
+concepts,
+resources page
+}
+playlists page
+
+student:
+read only:
+dances,
+moves/concepts,
+lessons,
+practice playlists
+
+other:
+deploy
+debug auth
