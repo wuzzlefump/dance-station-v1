@@ -22,12 +22,3 @@ function TeacherDashboard(props: Props) {
 }
 
 export default TeacherDashboard;
-
-export async function generateStaticParams() {
-  let res = await fetch(`${process.env.BASE_URL}/api/user/get-all`);
-  const users: TUser[] = await res.json();
-
-  //because rate limit
-
-  return users.filter((x) => x.admin === true).map((x) => ({ id: x._id }));
-}
