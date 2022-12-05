@@ -49,9 +49,6 @@ function BurgerMenu({ id }) {
         <div className="mx-auto">
           <Link href={`/student/${id}/dances`}>Dances</Link>
         </div>
-        <div className="mx-auto">
-          <Link href={"/playlists"}>Practice Playlists</Link>
-        </div>
         <div>
           <SignOutButton />
         </div>
