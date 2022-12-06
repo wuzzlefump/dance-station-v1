@@ -38,14 +38,13 @@ function Playlist({ playlist }: Props) {
       <h1 className="pageHeader">Practice Playlist</h1>
 
       <h2 className={" text-lg font-semibold pb-10"}>
-        {playlist.songs[songIndex].title}
+        {playlist?.songs[songIndex]?.title}
       </h2>
       <ReactAudioPlayer
         src={song}
         controls
         onEnded={() => {
           playNext();
-          console.log(song);
         }}
         controlsList={"nodownload"}
         autoPlay={songIndex !== 0 ? true : false}
@@ -54,7 +53,7 @@ function Playlist({ playlist }: Props) {
       <h1 className="text-xs font-extrabold pt-20">
         <span> Next Up:</span>
         {songIndex + 1 < playlist.songs.length &&
-          playlist.songs[songIndex + 1].title}
+          playlist?.songs[songIndex + 1].title}
       </h1>
     </div>
   );
