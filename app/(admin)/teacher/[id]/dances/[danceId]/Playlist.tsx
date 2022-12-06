@@ -18,17 +18,17 @@ function Playlist({ playlist }: Props) {
   };
   let [songIndex, setSongIndex] = useState<number>(0);
   let [song, setSong] = useState<any>(
-    getAudioURl(playlist.songs[songIndex].audio)
+    getAudioURl(playlist?.songs[songIndex].audio)
   );
 
   const playNext = () => {
     const index = songIndex;
 
-    if (index == playlist.songs.length - 1) {
-      setSong(getAudioURl(playlist.songs[0].audio));
+    if (index == playlist?.songs.length - 1) {
+      setSong(getAudioURl(playlist?.songs[0].audio));
       setSongIndex(0);
     } else {
-      setSong(getAudioURl(playlist.songs[index + 1].audio));
+      setSong(getAudioURl(playlist?.songs[index + 1].audio));
       setSongIndex(index + 1);
     }
   };
@@ -52,7 +52,7 @@ function Playlist({ playlist }: Props) {
 
       <h1 className="text-xs font-extrabold pt-20">
         <span> Next Up:</span>
-        {songIndex + 1 < playlist.songs.length &&
+        {songIndex + 1 < playlist?.songs.length &&
           playlist?.songs[songIndex + 1].title}
       </h1>
     </div>
